@@ -1,26 +1,33 @@
 # Documentation 
 
 ### Project Structure
-wallet-app/
+
+golang_wallet/
 │
 ├── cmd/
-│   └── main.go
+│   └── main.go                     # Application entry point
 │
 ├── internal/
 │   ├── domain/
-        └── user.go
+│   │   └── user.go                 # Core business entity
+│   │
 │   ├── repository/
-        └── user_repository_impl.go
-        └── user_repository.go
+│   │   ├── user_repository.go      # Repository interface
+│   │   └── user_repository_impl.go # GORM implementation
+│   │
 │   ├── usecase/
-        └── wallet_usecase.go
+│   │   └── wallet_usecase.go       # Business logic layer
+│   │
 │   └── handler/
-        └── wallet_handler.go
+│       └── wallet_handler.go       # HTTP handler layer
 │
-└── pkg/
-    └── database.go
-│   ├── Postman/
-│       └── Wallet.postman_collection.json
-│   ├── Database/
-        └── wallet_db.sql
+├── pkg/
+│   └── database.go                 # Database initialization
+│
+├── Postman/
+│   └── Wallet.postman_collection.json  # API testing collection
+│
+└── Database/
+    └── wallet_db.sql               # Database schema & seed data
+
 
