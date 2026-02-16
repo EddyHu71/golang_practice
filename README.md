@@ -1,4 +1,4 @@
-<img width="1140" height="185" alt="image" src="https://github.com/user-attachments/assets/d321a6bf-4f40-48ff-8538-f61eee0c509e" /># Documentation 
+# Documentation 
 
 ### Project Structure
 
