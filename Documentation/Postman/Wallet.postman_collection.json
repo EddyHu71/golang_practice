@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "2302e089-05a6-4827-a26d-5cdf7ce2205f",
+    "name": "Wallet",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "4838312"
+  },
+  "item": [
+    {
+      "name": "Withdraw",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user_id\": 1,\r\n  \"amount\": 1000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/withdraw",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "withdraw"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Balance",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
