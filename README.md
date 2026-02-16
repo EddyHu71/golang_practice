@@ -2,7 +2,7 @@
 
 ### Project Structure
 
-<pre> ```golang_wallet/
+<pre>golang_wallet/
 │
 ├── cmd/
 │   └── main.go                     # Application entry point
@@ -29,6 +29,11 @@
 │
 └── Database/
     └── wallet_db.sql               # Database schema & seed data
-``` </pre>
+</pre>
+
+How to run the project:
+1. Run the xampp then import the databaase that contains in Database folder
+2. Go to CMD folder then go ``` go run main.go ```
+3. If you want to test the API, you can use postman that contains in Postman folder
 
 
